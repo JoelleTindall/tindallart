@@ -1,1 +1,94 @@
 @import "tailwindcss";
+
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@layer base {
+  @theme {
+
+    --color-offblack: #030c0a;
+  }
+
+  /* @font-face {
+    font-family: "Gotham";
+    font-display: swap;
+    src: url("/fonts/Gotham/Gotham-Book.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: "RigidSquare-Bold";
+    font-display: swap;
+    src: url("/fonts/RigidSquare/RigidSquare-Bold.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "RigidSquare-SemiBold";
+    src: url("/fonts/RigidSquare/RigidSquare-SemiBold.otf") format("opentype");
+  } */
+
+
+
+
+  * {
+    box-sizing: border-box;
+    /* font-family: "Gotham", sans-serif; */
+  }
+  /* h1,
+  .link {
+    font-family: "RigidSquare-Bold", sans-serif;
+  }
+  h2 {
+    font-family: "RigidSquare-SemiBold", sans-serif;
+  } */
+  p,
+  h1,
+  h2,
+  h3,
+  h4:hover {
+    cursor: default;
+  }
+
+  p {
+    color: var(--color-offblack);
+  }
+
+  a {
+    font-weight: bold;
+  }
+  a:hover {
+    cursor: pointer;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    padding: 5px;
+  }
+
+  input[type="submit"]:hover,
+  input[type="checkbox"]:hover,
+  button:hover {
+    cursor: pointer;
+  }
+}
+
+@custom-variant mobilePortrait {
+  @media only screen and ((
+ ((max-height: 990px) and (max-width: 560px)) or
+              ((max-height: 560px) and (max-width: 990px))
+          )
+          and (orientation: portrait)) {
+    @slot;
+  }
+}
+
+@custom-variant mobileLandscape {
+  @media only screen and ((
+ ((max-height: 990px) and (max-width: 560px)) or
+              ((max-height: 560px) and (max-width: 990px))
+          )
+          and (orientation: landscape)) {
+    @slot;
+  }
+}

@@ -2,15 +2,17 @@
     <main>
         <div>
             <h1>walcome to tindall art .com</h1>
-            <div><NuxtLink to="dana">Dana's Page</NuxtLink></div>
-            <div><NuxtLink to="karen">Karen's Page</NuxtLink></div>
+          <div class="flex flex-row">
+               <Artistlink for="dana"/>
+               <Artistlink for="karen"/>
+          </div>
         </div>
     </main>
 </template>
 
 <script setup>
 useSeoMeta({
-    title: 'Tindallart - Artworks of Karen and Dana Tindall',
+    title: 'TindallArt: fine art by two fine artists',
     ogTitle: 'Tindallart', // Open Graph title
     description: 'Cincinnati based artists Karen Tindall and Dana Tindall',
 });

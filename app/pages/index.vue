@@ -2,7 +2,7 @@
     <main>
         <div>
             <h1>walcome to tindall art .com</h1>
-          <div class="flex flex-row">
+          <div class="flex md:flex-row flex-col">
                <Artistlink for="dana"/>
                <Artistlink for="karen"/>
           </div>

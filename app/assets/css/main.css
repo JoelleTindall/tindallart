@@ -7,32 +7,18 @@
 
 @layer base {
   @theme {
-
     --color-offblack: #030c0a;
   }
 
-  /* @font-face {
-    font-family: "Gotham";
-    font-display: swap;
-    src: url("/fonts/Gotham/Gotham-Book.otf") format("opentype");
-  }
-
   @font-face {
-    font-family: "RigidSquare-Bold";
-    font-display: swap;
-    src: url("/fonts/RigidSquare/RigidSquare-Bold.otf") format("opentype");
+    font-family: "Marker Felt";
+    src: url("/fonts/Marker Felt.ttf") format("truetype");
   }
-  @font-face {
-    font-family: "RigidSquare-SemiBold";
-    src: url("/fonts/RigidSquare/RigidSquare-SemiBold.otf") format("opentype");
-  } */
-
-
-
 
   * {
     box-sizing: border-box;
-    /* font-family: "Gotham", sans-serif; */
+    font-family: "Marker Felt", sans-serif;
+    letter-spacing: 0.25px;
   }
   /* h1,
   .link {

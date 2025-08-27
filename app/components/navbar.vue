@@ -1,8 +1,8 @@
 <template>
   <div ref="navbar"
     class="sticky overflow-x-hidden top-0 z-50 bg-white shadow-[0px_4px_15px_0px_rgba(0,_0,_0,_0.35)] h-fit min-h-[96px] w-full transition-all duration-200"
-    :style="[showMenu ? 'min-height:100dvh;' : 'min-height:96px;']">
-    <div id="nav">
+    :style="[showMenu ? 'min-height:100dvh;' : 'min-height:96px;', navHidden ? 'transform: translateY(-96px); opacity:0;' : 'transform: translateY(0); opacity:1;']">
+      <div id="nav">
       <nav class="container min-w-full min-h-full mobileLandscape:flex mobileLandscape:justify-between mobileLandscape:items-center md:flex md:justify-between md:items-center">
         <div class="flex items-center justify-between h-full min-h-[96px]">
           <NuxtLink to="/" class="my-2 pl-6 h-full">
@@ -70,7 +70,8 @@ import { ref, onMounted, onBeforeUnmount } from "vue";
 const showMenu = ref(false);
 const height = ref(0);
 const navbar = ref(null);
-
+const navHidden = ref(false);
+let lastScrollTop = 0;
 const toggleNav = () => {
   const element = document.getElementById('nav');
   height.value = element.clientHeight;
@@ -93,12 +94,31 @@ const menuItems = [
   { to: '/contact', name: 'Contact'}
 ];
 
+
+const handleScroll = () => {
+  const st = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (st > lastScrollTop + 2 && lastScrollTop > 100) {
+    if (!navHidden.value && !showMenu.value) {
+      navHidden.value = true;
+    }
+  } else if (st < lastScrollTop - 2) {
+    if (navHidden.value) {
+      navHidden.value = false;
+    }
+  }
+  lastScrollTop = st <= 0 ? 0 : st;
+};
+
 onMounted(() => {
   window.addEventListener('resize', handleWindowResize);
+  window.addEventListener('scroll', handleScroll);
+
 });
 
 onBeforeUnmount(() => {
   window.removeEventListener('resize', handleWindowResize);
+  window.removeEventListener('scroll', handleScroll);
   document.body.style.overflow = "initial";
 });
 </script>

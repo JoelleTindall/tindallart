@@ -9,13 +9,16 @@
   @theme {
     --color-offblack: #030c0a;
     --background-zoom: zoomBackground 1s ease-in-out forwards;
-
   }
-
 
   @font-face {
     font-family: "Marker Felt";
     src: url("/fonts/Marker Felt.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "SegoeMarker";
+    src: url("/fonts/SegoeMarker.ttf") format("truetype");
   }
 
   * {
@@ -23,13 +26,14 @@
     font-family: "Marker Felt", sans-serif;
     letter-spacing: 0.25px;
   }
-  /* h1,
-  .link {
-    font-family: "RigidSquare-Bold", sans-serif;
+
+  p {
+    font-family: "SegoeMarker", sans-serif;
   }
-  h2 {
-    font-family: "RigidSquare-SemiBold", sans-serif;
-  } */
+
+  .artdescription {
+    font-family: Arial, Helvetica, sans-serif;
+  }
   p,
   h1,
   h2,
@@ -61,18 +65,14 @@
     cursor: pointer;
   }
 
-
   @keyframes zoomBackground {
-  from {
-    background-size: 100%;
-
+    from {
+      background-size: 100%;
+    }
+    to {
+      background-size: 120%;
+    }
   }
-  to {
-    background-size: 120%;
-  }
-
-}
-
 }
 
 @custom-variant mobilePortrait {

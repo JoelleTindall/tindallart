@@ -1,8 +1,10 @@
 <template>
+    
     <main>
+        <Hero></Hero>
         <div>
-            <h1>walcome to tindall art .com</h1>
-          <div class="flex md:flex-row flex-col">
+            
+          <div class="flex md:flex-row flex-col w-full">
                <Artistlink for="dana"/>
                <Artistlink for="karen"/>
           </div>

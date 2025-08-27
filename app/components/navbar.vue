@@ -1,15 +1,15 @@
 <template>
   <div ref="navbar"
-    class="sticky overflow-x-hidden top-0 z-50 bg-gradient-to-b from-darkgreen to-darkergreen shadow-[0px_4px_15px_0px_rgba(0,_0,_0,_0.35)] h-fit min-h-[96px] w-full transition-all duration-200"
+    class="sticky overflow-x-hidden top-0 z-50 bg-white shadow-[0px_4px_15px_0px_rgba(0,_0,_0,_0.35)] h-fit min-h-[96px] w-full transition-all duration-200"
     :style="[showMenu ? 'min-height:100dvh;' : 'min-height:96px;']">
     <div id="nav">
-      <nav class="container min-w-full h-full mobileLandscape:flex mobileLandscape:justify-between mobileLandscape:items-center md:flex md:justify-between md:items-center">
-        <div class="flex items-center justify-between">
-          <NuxtLink to="/" class="my-2 pl-6">
-            <div @click="showMenu && toggleNav()">
+      <nav class="container min-w-full min-h-full mobileLandscape:flex mobileLandscape:justify-between mobileLandscape:items-center md:flex md:justify-between md:items-center">
+        <div class="flex items-center justify-between h-full min-h-[96px]">
+          <NuxtLink to="/" class="my-2 pl-6 h-full">
+            <div @click="showMenu && toggleNav()" class="min-h-full bg-black/10 rounded-lg">
               <!-- <img src="~/assets/images/logos/logo-badge.png"
                 class="md:visible h-20 min-w-20 shadow-sm rounded-[50%] bg-darkgreen"> -->
-                <h2>Tindallart</h2>
+                <h2 class="h-full text-3xl p-2 ">Tindallart</h2>
             </div>
           </NuxtLink>
 
@@ -17,10 +17,10 @@
             <div class="flex mobileLandscape:hidden md:hidden rounded-3xl p-2">
               <button class="group rounded-lg ">
                 <div class="grid justify-items-center gap-1.5">
-                  <span class="h-1 w-8 rounded-full bg-lightgray transition"
+                  <span class="h-1 w-8 rounded-full bg-offblack transition"
                     :class="[showMenu && 'rotate-45 translate-y-2.5']" />
-                  <span class="h-1 w-8 rounded-full bg-lightgray transition" :class="[showMenu && 'scale-x-0']" />
-                  <span class="h-1 w-8 rounded-full bg-lightgray transition"
+                  <span class="h-1 w-8 rounded-full bg-offblack transition" :class="[showMenu && 'scale-x-0']" />
+                  <span class="h-1 w-8 rounded-full bg-offblack transition"
                     :class="[showMenu && '-rotate-45 -translate-y-2.5']" />
                 </div>
               </button>

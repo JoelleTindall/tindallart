@@ -8,6 +8,11 @@
 @layer base {
   @theme {
     --color-offblack: #030c0a;
+    --color-offwhite:#FFFFFA;
+    --color-choco: #967259;
+    --color-strawb:#D7C6CF;
+    --color-mint: #AAFAC8;
+    --color-robinegg: #C7FFED;
     --background-zoom: zoomBackground 1s ease-in-out forwards;
   }
 

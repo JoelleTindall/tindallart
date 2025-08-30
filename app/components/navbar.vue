@@ -98,7 +98,7 @@ const menuItems = [
 const handleScroll = () => {
   const st = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (st > lastScrollTop + 2 && lastScrollTop > 100) {
+  if (st > lastScrollTop && lastScrollTop > 100) {
     if (!navHidden.value && !showMenu.value) {
       navHidden.value = true;
     }

@@ -1,15 +1,7 @@
 <template>
     <div class="m-2">
         <NuxtLink class="w-full h-full" :to="for">
-            <!-- <div class="border-2 flex content-center items-center h-100 w-full bg-green-100 bg-cover bg-center" 
-        :class="`bg-[url(${bgimg})]`">
-            <div class="absolute inset-0 bg-gray-700 opacity-60 rounded-md"></div>
-    <div class="absolute inset-0 flex items-center justify-center">
-                    <h2 class="text-white text-3xl font-bold hover:cursor-pointer">{{name}}'s Page</h2>
-
-    </div>
-        
-        </div> -->
+   
             <div class="relative max-w-xl lg:max-w-full">
 
                 <div class="h-64 lg:h-200 w-full object-cover rounded-md group">

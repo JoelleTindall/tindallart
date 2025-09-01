@@ -1,14 +1,14 @@
 <template>
     <ClientOnly>
 
-        <div ref="containerRef" class="border-2 min-h-dvh md:max-h-full">
+        <div ref="containerRef" class="border-2 max-h-full">
 
             <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper"
                 thumbs-swiper=".mySwiper2"  space-between="10" :navigation="true" :slides-per-view="1" :auto-height="true">
               
                 <swiper-slide v-for="(img) in images" :key="img.src" class="bg-black/95 color-white flex flex-col">
                     <img :src="img.src" :alt="img.description" />
-                    <div class=" h-10 min-h-fit  content-center items-center ">
+                    <div class=" max-h-10 h-fit  content-center items-center ">
                         <p class="artdescription  text-center text-white">{{ img.description }}</p>
                     </div>
                 </swiper-slide>

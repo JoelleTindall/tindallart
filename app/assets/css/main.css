@@ -14,6 +14,8 @@
     --color-mint: #AAFAC8;
     --color-robinegg: #C7FFED;
     --background-zoom: zoomBackground 1s ease-in-out forwards;
+
+    --artist-grid-rows: 1fr 0fr ;
   }
 
   @font-face {

@@ -1,10 +1,10 @@
 <template>
   <div ref="navbar"
-    class="sticky overflow-x-hidden top-0 z-50 bg-white shadow-[0px_4px_15px_0px_rgba(0,_0,_0,_0.35)] h-fit min-h-[96px] w-full transition-all duration-200"
-    :style="[showMenu ? 'min-height:100dvh;' : 'min-height:96px;', navHidden ? 'transform: translateY(-96px); opacity:0;' : 'transform: translateY(0); opacity:1;']">
+    class=" overflow-x-hidden top-0 z-50 bg-white shadow-[0px_4px_15px_0px_rgba(0,_0,_0,_0.35)] h-fit min-h-[70px] w-full transition-all duration-200"
+    :style="[showMenu ? 'min-height:100dvh;' : 'min-height:70px;', navHidden ? 'transform: translateY(-70px); opacity:0;' : 'transform: translateY(0); opacity:1;']">
       <div id="nav">
       <nav class="container min-w-full min-h-full mobileLandscape:flex mobileLandscape:justify-between mobileLandscape:items-center md:flex md:justify-between md:items-center">
-        <div class="flex items-center justify-between h-full min-h-[96px]">
+        <div class="flex items-center justify-between h-full min-h-[70px]">
           <NuxtLink to="/" class="my-2 pl-6 h-full">
             <div @click="showMenu && toggleNav()" class="min-h-full bg-black/10 rounded-lg">
               <!-- <img src="~/assets/images/logos/logo-badge.png"

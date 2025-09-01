@@ -1,14 +1,14 @@
 <template>
-    <div class="md:max-w-3/4 md:m-auto">
-        <div class="w-full min-h-fit p-4 text-center bg-choco">
+    <div class="md:max-w-3/4 md:m-auto max-h-full">
+        <div class="w-full max-h-full p-4 text-center bg-choco">
             <h2 class="text-3xl pb-4">About {{ name }}</h2>
-            <div class="mx-4  min-h-fit p-2 bg-white rounded shadow-offblack/50 shadow-md">
+            <div class="mx-4  max-h-full p-2 bg-white rounded shadow-offblack/50 shadow-md">
                 <p>{{ bio }}</p>
             </div>
 
         </div>
-        <div class="w-full min-h-fit p-4 text-center bg-strawb">
-            <div class="mx-4  min-h-fit p-2 bg-white rounded shadow-offblack/50 shadow-md">
+        <div class="w-full max-h-full p-4 text-center bg-strawb">
+            <div class="mx-4  max-h-full p-2 bg-white rounded shadow-offblack/50 shadow-md">
                 <p>{{ quote }}</p>
             </div>
 

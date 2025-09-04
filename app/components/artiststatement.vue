@@ -1,15 +1,18 @@
 <template>
-    <div class="md:max-w-3/4 md:m-auto max-h-full">
-        <div class="w-full max-h-full p-4 text-center bg-choco">
-            <h2 class="text-3xl pb-4">About {{ name }}</h2>
-            <div class="mx-4  max-h-full p-2 bg-white rounded shadow-offblack/50 shadow-md">
-                <p>{{ bio }}</p>
+    <div class="md:max-w-3/4 md:m-auto min-h-fit bg-none text-offwhite ">
+        <!-- <banner src="/images/dana/Orange_Popsicle_2024_Mixed_media_18x7x4.jpeg" height="50px"></banner> -->
+        <div class="w-full min-h-full p-4 text-center ">
+            <!-- <h2 class="text-3xl pb-4">About {{ name }}</h2> -->
+            <div class="mx-4 text-xl min-h-fit p-2  ">
+                <p class="text-offwhite">{{ bio }}</p>
             </div>
 
         </div>
-        <div class="w-full max-h-full p-4 text-center bg-strawb">
-            <div class="mx-4  max-h-full p-2 bg-white rounded shadow-offblack/50 shadow-md">
-                <p>{{ quote }}</p>
+        <banner height="175px"></banner>
+        <div class="w-full min-h-fit p-4 text-center">
+            <div class="mx-4 text-xl min-h-fit p-2">
+                 <h2 class="text-5xl text-center uppercase pb-4">The Art</h2>
+                <p class="text-offwhite italic">"{{ quote }}"</p>
             </div>
 
         </div>

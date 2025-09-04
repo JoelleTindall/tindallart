@@ -1,7 +1,7 @@
 <template>
   <div ref="navbar"
-    class=" overflow-x-hidden top-0 z-50 bg-white shadow-[0px_4px_15px_0px_rgba(0,_0,_0,_0.35)] h-fit min-h-[70px] w-full transition-all duration-200"
-    :style="[showMenu ? 'min-height:100dvh;' : 'min-height:70px;', navHidden ? 'transform: translateY(-70px); opacity:0;' : 'transform: translateY(0); opacity:1;']">
+    class=" fixed bg-none overflow-x-hidden top-0 z-50   h-fit min-h-[70px] w-full transition-all duration-200"
+    :style="[showMenu ? 'min-height:100dvh;' : 'min-height:72px;', navHidden ? 'transform: translateY(-70px); opacity:0;' : 'transform: translateY(0); opacity:1;']">
       <div id="nav">
       <nav class="container min-w-full min-h-full mobileLandscape:flex mobileLandscape:justify-between mobileLandscape:items-center md:flex md:justify-between md:items-center">
         <div class="flex items-center justify-between h-full min-h-[70px]">
@@ -13,7 +13,7 @@
             </div>
           </NuxtLink>
 
-          <div class="mr-6 hover:cursor-pointer" @click="toggleNav">
+          <div class=" absolute right-0 mr-6 hover:cursor-pointer" @click="toggleNav">
             <div class="flex mobileLandscape:hidden md:hidden rounded-3xl p-2">
               <button class="group rounded-lg ">
                 <div class="grid justify-items-center gap-1.5">

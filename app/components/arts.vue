@@ -1,17 +1,17 @@
 <template>
-<div>
-  <h2 class="text-3xl text-center">Gallery</h2>
-    <div class="flex flex-col md:flex-row py-10">
-      <div class="px-2 pb-5  md:w-1/2" v-for="img in images" :key="img.src">
-        <img :src="img.src" :alt="img.description" />
-        <p class="artdescription">{{ img.description }}</p>
+  <div class=" ">
+    <div class="flex flex-col md:flex-row pb-10">
+      <div class="px-2 pb-5  md:w-1/2" v-for="art in arts" :key="art.src">
+        <NuxtImg :src="`images/dana/${art.src}`" :alt="art.name + art.description" />
+        <p>{{ art.name }}</p>
+        <p class="artdescription text-offwhite">{{ art.description }}</p>
       </div>
     </div>
-</div>
-<h2>Gallery</h2>
+  </div>
 </template>
 
 <script setup lang="ts">
+import { NuxtImg } from '#components';
 import { ref, onMounted } from 'vue'
 
 const props = withDefaults(defineProps<{
@@ -22,62 +22,63 @@ const props = withDefaults(defineProps<{
 
 let allImages = {}
 const images = ref<any[]>([])
-
-// function addWatermark(imgSrc: string, text = 'Tindallart.com'): Promise<string> {
-//   return new Promise((resolve) => {
-//     const baseImage = new Image()
-//     baseImage.src = imgSrc
-
-//     baseImage.onload = () => {
-//       const canvas = document.createElement('canvas')
-//       const ctx = canvas.getContext('2d')!
-
-//       canvas.width = baseImage.width
-//       canvas.height = baseImage.height
-
-//       // Draw original image
-//       ctx.drawImage(baseImage, 0, 0)
-
-//       const canvasWidth=canvas.width-50
-//       const canvasHeight=canvas.height-20
-//       // Add watermark
-//       ctx.font = '75px Arial'
-//       ctx.fillStyle = 'rgba(0, 0, 0, 0.5)'
-//       ctx.textAlign = 'right'
-//       ctx.textBaseline = 'bottom'
-//       ctx.fillText(text, canvasWidth, canvasHeight)
-
-//       resolve(canvas.toDataURL('image/jpeg'))
-//     }
-//   })
-//}
+let arts: any[] = []
 
 switch (props.for) {
   case "dana":
-    allImages = import.meta.glob('~/assets/images/dana/*', { eager: true })
-    break
+
+    arts = [
+      { src: '3 Corndogs!, 2025,  10” x 6.5” x 3.5” Mixed media.jpeg', name: '3 Corndogs!', description: '10” x 6.5” x 3.5” Mixed media' },
+      { src: 'Big Fat Burger, 8.25” x 7” x 7” Mixed media.jpg', name: 'Big Fat Burger', description: '8.25” x 7” x 7” Mixed media' },
+      { src: 'Bomb Pop, 2025, 18” x 5.5” x 5.5” Mixed media.jpg', name: 'Bomb Pop', description: '18” x 5.5” x 5.5” Mixed media' },
+      { src: 'Breakfast Treat, 2025, 12” x 9 “ x 2.5” Mixed media.jpg', name: 'Breakfast Treat', description: '12” x 9 “ x 2.5” Mixed media' },
+      { src: 'Corndog with Mustard, 2025, approx 10” x 4” x 4” Mixed media.jpg', name: 'Corndog with Mustard', description: 'approx 10” x 4” x 4” Mixed media' },
+      { src: 'Dreamsicle, 2025, 16” x 5.5”x 2.5” Mixed media.jpg', name: 'Dreamsicle', description: '16” x 5.5”x 2.5” Mixed media' },
+      { src: 'Everything Bagel with Lox, Onions and Capers, 2025, 10” x 8” x 3.5” Mixed media.jpeg', name: 'Everything Bagel w/ Lox, Onions, and Capers', description: '10” x 8” x 3.5” Mixed media' },
+      { src: 'Orange_Popsicle_2024_Mixed_media_18x7x4.jpeg', name: 'Orange Popsicle', description: 'Mixed_media_18x7x4' },
+      { src: 'Pancakes, 2025,  10”x 9”x3.5” Mixed media.jpeg', name: 'Pancakes', description: '10”x 9”x3.5” Mixed media' },
+      { src: 'PB&J (tasted!), 2025, Approx. 10” x 12” x 3.5” Mixed media.jpg', name: 'PB&J (tasted!)', description: 'Approx. 10” x 12” x 3.5” Mixed media' },
+      { src: 'Pee Wee’s Corndog, 2025, Approx 18” x 5” x 4”.jpg', name: 'Pee Wee’s Corndog', description: 'Approx 18” x 5” x 4” Mixed Media' },
+      { src: 'Raspberry Chip Cone, 2025, Approx 14” x 6” x 6.jpeg', name: 'Raspberry Chip Cone', description: 'Approx 14” x 6” x 6 Mixed media' },
+      { src: 'Superman Cone, 2025, Approx. 14” x 6” x 6” Mixed media.jpeg', name: 'Superman Cone', description: 'Approx. 14” x 6” x 6” Mixed media' },
+
+    ];
+    break;
   case "karen":
-    allImages = import.meta.glob('~/assets/images/karen/*', { eager: true })
-    break
+    arts = [
+      { src: 'images/karen/', name: '', description: '' },
+      { src: 'images/karen/', name: '', description: '' },
+      { src: 'images/karen/', name: '', description: '' },
+      { src: 'images/karen/', name: '', description: '' }
+    ];
+    break;
 }
 
-onMounted(async () => {
-  const entries = Object.entries(allImages)
-  const processed = await Promise.all(entries.map(async ([path, mod]) => {
-    const parts = path.split('/')
-    const artist = parts.at(-2) || ''
-    const fileName = parts.at(-1) || ''
-    const description = fileName.replace(/\.[^/.]+$/, '')
+// switch (props.for) {
+//   case "dana":
+//     allImages = import.meta.glob('~/assets/images/dana/*', { eager: true })
+//     break
+//   case "karen":
+//     allImages = import.meta.glob('~/assets/images/karen/*', { eager: true })
+//     break
+// }
 
-    // const watermarked = await addWatermark((mod as any).default)
+// onMounted(async () => {
+//   const entries = Object.entries(allImages)
+//   const processed = await Promise.all(entries.map(async ([path, mod]) => {
+//     const parts = path.split('/')
+//     const artist = parts.at(-2) || ''
+//     const fileName = parts.at(-1) || ''
+//     const description = fileName.replace(/\.[^/.]+$/, '')
 
-    return {
-      artist,
-      src: (mod as any).default,
-      description,
-    }
-  }))
-  images.value = processed
-})
+//     // const watermarked = await addWatermark((mod as any).default)
+
+//     return {
+//       artist,
+//       src: (mod as any).default,
+//       description,
+//     }
+//   }))
+//   images.value = processed
+// })
 </script>
-

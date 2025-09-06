@@ -1,6 +1,6 @@
 <template>
     <div class="h-full w-full">
-<artistpage for="dana"></artistpage>
+<artistpage for="karen"></artistpage>
     </div>
 </template>
 

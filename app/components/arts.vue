@@ -1,11 +1,19 @@
 <template>
-  <div class=" ">
-    <div class="flex flex-col md:flex-row pb-10">
-      <div class="px-2 pb-5  md:w-1/2" v-for="art in arts" :key="art.src">
-        <NuxtImg :src="`images/dana/${art.src}`" :alt="art.name + art.description" />
-        <p>{{ art.name }}</p>
-        <p class="artdescription text-offwhite">{{ art.description }}</p>
+  <div class=" bg-gradient-to-b from-choco to-strawb">
+    <div class="flex flex-wrap pb-10 justify-center">
+
+      <div class="flex flex-col m-2 p-2  min-h-fit lg:w-120 md:w-5/12 w-120 shadow-offblack/20 shadow-xl  bg-darkchoco "
+        v-for="art in arts" :key="art.src">
+        <div>
+          <NuxtImg class=" shadow-md shadow-offblack/20 object-contain h-full w-full" :src="`images/dana/${art.src}`"
+            :alt="art.name + art.description" />
+        </div>
+        <div class="pt-2">
+          <p class="artdescription text-xl text-offwhite font-bold">{{ art.name }}</p>
+          <p class="artdescription text-offwhite italic">{{ art.description }}</p>
+        </div>
       </div>
+
     </div>
   </div>
 </template>

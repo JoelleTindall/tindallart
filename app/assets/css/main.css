@@ -13,6 +13,7 @@
     --color-offwhite:#FFFFFA;
     --color-choco: #967259;
     --color-strawb:#D7C6CF;
+    --color-darkchoco:#597d96;
     --color-mint: #AAFAC8;
     --color-robinegg: #C7FFED;
     --background-zoom: zoomBackground 1s ease-in-out forwards;
@@ -38,6 +39,10 @@
 
   p {
     font-family: "Open Sans", sans-serif;
+  }
+
+  input,label,textarea{
+        font-family: "Open Sans", sans-serif;
   }
 
   .artdescription {

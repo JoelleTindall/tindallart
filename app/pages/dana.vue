@@ -1,12 +1,7 @@
 <template>
-    <!-- <h2>Dana Tindall</h2> -->
- <div>
-        <artiststatement for="dana" />
-    
-
-    
-        <arts for="dana"></arts>
- </div>
+    <div class="h-full w-full">
+<artistpage for="dana"></artistpage>
+    </div>
 </template>
 
 <script setup>

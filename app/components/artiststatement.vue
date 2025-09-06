@@ -4,6 +4,8 @@
         <div class="w-full min-h-full p-4 text-center ">
             <!-- <h2 class="text-3xl pb-4">About {{ name }}</h2> -->
             <div class="mx-4 text-xl min-h-fit p-2  ">
+                                 <h2 class="text-4xl text-center uppercase pb-4">The Artist</h2>
+
                 <p class="text-offwhite">{{ bio }}</p>
             </div>
 
@@ -11,7 +13,7 @@
         <banner height="175px"></banner>
         <div class="w-full min-h-fit p-4 text-center">
             <div class="mx-4 text-xl min-h-fit p-2">
-                 <h2 class="text-5xl text-center uppercase pb-4">The Art</h2>
+                 <h2 class="text-4xl text-center uppercase pb-4">The Art</h2>
                 <p class="text-offwhite italic">"{{ quote }}"</p>
             </div>
 

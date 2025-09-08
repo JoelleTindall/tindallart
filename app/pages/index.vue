@@ -4,7 +4,7 @@
         <Hero></Hero>
         <div>
             
-          <div class="flex md:flex-row flex-col w-full">
+          <div class="flex md:flex-row md:flex-nowrap flex-wrap w-full justify-center">
                <Artistlink for="dana"/>
                <Artistlink for="karen"/>
           </div>

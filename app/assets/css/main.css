@@ -47,6 +47,7 @@
 
   .artdescription {
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-offwhite);
   }
   p,
   h1,

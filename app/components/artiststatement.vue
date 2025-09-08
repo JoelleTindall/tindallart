@@ -10,7 +10,7 @@
             </div>
 
         </div>
-        <banner height="175px"></banner>
+        <!-- <banner height="175px"></banner> -->
         <div class="w-full min-h-fit p-4 text-center">
             <div class="mx-4 text-xl min-h-fit p-2">
                  <h2 class="text-4xl text-center uppercase pb-4">The Art</h2>

@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/first-attribute-linebreak -->
 <template>
-  <div class="p-4">
-    <div class="min-w-fit lg:max-w-3/5 m-auto p-1">
+  <div class="p-4 ">
+    <div class="min-w-fit lg:max-w-3/5 m-auto p-1 bg-darkchoco">
       <form name="contact" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
 

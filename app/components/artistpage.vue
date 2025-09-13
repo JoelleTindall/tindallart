@@ -14,6 +14,7 @@
     <Artiststatement :for="for"></Artiststatement>
 
     <arts :for="for"></arts>
+    <Affiliates :for="for"/>
   </div>
 
 </template>

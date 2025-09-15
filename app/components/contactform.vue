@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/first-attribute-linebreak -->
 <template>
   <div class="p-4 ">
-    <div class="min-w-fit lg:max-w-3/5 m-auto p-1 bg-darkchoco">
+    <div class="min-w-fit lg:max-w-3/5 m-auto p-1 bg-blueb">
       <form name="contact" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
 
@@ -41,7 +41,7 @@
 
         <div class="content-center text-center w-full py-8">
           <input type="submit" value="Send Message"
-            class="w-full text-2xl border-2 rounded bg-choco p-4 text-white border-offblack shadow-offblack/60 shadow-sm hover:shadow-md hover:bg-darkchoco hover:text-white hover:border-black transition-all">
+            class="w-full text-2xl border-2 rounded bg-choco p-4 text-white border-offblack shadow-offblack/60 shadow-sm hover:shadow-md hover:bg-blueb hover:text-white hover:border-black transition-all">
         </div>
       </form>
     </div>

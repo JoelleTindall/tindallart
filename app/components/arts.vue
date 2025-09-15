@@ -1,7 +1,7 @@
 <template>
-  <div class=" ">
+  <div class=" bg-choco">
     <!-- zoomed in -->
-
+<h2 class="text-5xl text-center uppercase py-10 text-offwhite lg:text-8xl ">The Art</h2>
     <div @click="(e) => toggleHideText()" class=" top-0 left-0 right-0 h-dvh max-h-dvh min-h-fit max-w-dvw z-1000 bg-black/75 backdrop-blur-sm "
       :class="[zoom ? 'fixed' : 'hidden']">
       <div
@@ -33,7 +33,7 @@
         v-for="art in arts" :key="art.src">
        
 
-          <div @click="(e) => toggleZoom(`images/${art.artist}/${art.src}`, art.name, art.description)" class="w-full h-full hover:cursor-pointer p-2 shadow-offblack/20 shadow-xl transition-all hover:shadow-offblack/30 hover:p-1  bg-darkchoco">
+          <div @click="(e) => toggleZoom(`images/${art.artist}/${art.src}`, art.name, art.description)" class="w-full h-full hover:cursor-pointer p-2 shadow-offblack/20 shadow-xl transition-all hover:shadow-offblack/30 hover:p-1  bg-blueb">
             <div>
               <NuxtImg class=" shadow-md shadow-offblack/20 object-contain h-full w-full" :src="`/images/${art.artist}/${art.src}`"
                 :alt="art.name + art.description" />

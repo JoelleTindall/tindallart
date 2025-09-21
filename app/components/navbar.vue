@@ -5,11 +5,10 @@
       <div id="nav">
       <nav class="container min-w-full min-h-full mobileLandscape:flex mobileLandscape:justify-between mobileLandscape:items-center md:flex md:justify-between md:items-center">
         <div class="flex items-center justify-between h-full min-h-[70px]">
-          <NuxtLink to="/" class="my-2 pl-6 h-full">
-            <div @click="showMenu && toggleNav()" class="min-h-full bg-black/10 rounded-lg">
-              <!-- <img src="~/assets/images/logos/logo-badge.png"
-                class="md:visible h-20 min-w-20 shadow-sm rounded-[50%] bg-darkgreen"> -->
-                <h2 class="h-full text-3xl p-2 ">Tindallart</h2>
+          <NuxtLink to="/" class=" group my-2 pl-6 h-full group-hover:cursor-pointer">
+            <div @click="showMenu && toggleNav()" class="min-h-full bg-black/10 rounded-lg group-hover:cursor-pointer h-full border-2">
+            
+                <h2 class="h-full text-3xl p-2 group-hover:cursor-pointer">Tindallart</h2>
             </div>
           </NuxtLink>
 
@@ -34,21 +33,21 @@
           :style="showMenu ? `height:calc(100dvh - ${height}px)` : 'height:0;'"
           @mouseover="hovering = true"
           @mouseleave="hovering = false">
-<!--           
+          
           <NavbarMobileItem
             v-for="item in menuItems"
             :key="item.to"
             :to="item.to"
             :name="item.name"
-            :reverse="item.reverse"
+           
             :hovering="hovering"
             @click="toggleNav"
-          /> -->
+          />
         </ul>
 
         <!-- Desktop Nav -->
         <ul 
-          class="hidden mobileLandscape:flex mobileLandscape:w-100 md:flex flex-row text-2xl md:text-3xl h-full py-0"
+          class="hidden mobileLandscape:flex mobileLandscape:w-100 md:flex flex-row text-2xl md:text-3xl h-full py-0  bg-strawb rounded-bl"
           @mouseover="hovering = true"
           @mouseleave="hovering = false">
           

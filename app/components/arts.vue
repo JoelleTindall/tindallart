@@ -8,14 +8,14 @@
         class="absolute right-3 top-3 z-1001 bg-black/50 rounded-4xl fill-white hover:cursor-pointer hover:opacity-90 active:opacity-90 opacity-50"
         :class="[hideText && 'hidden']"
         @click="(e) => toggleZoom()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 -960 960 960">
+        <svg class="h-[40px] md:h-[58px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
           <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224z" />
         </svg>
       </div>
       <div
         class=" w-full h-full p-2 mobileLandscape:p-0 flex flex-wrap lg:flex-row  content-center justify-center m-auto">
         <div v-if="selected[0]!='src'" class="flex-1/1 mobileLandscape:max-h-screen mobileLandscape:min-w-screen md:max-h-dvh  lg:flex-2/3">
-          <NuxtImg :src="selected[0]" class="max-h-screen m-auto py-4 mobileLandscape:py-0 rounded-lg"/>
+          <NuxtImg :src="selected[0]" class="max-h-130 md:max-h-screen m-auto py-4 mobileLandscape:py-0 rounded-lg"/>
         </div>
         <div
           class=" transition flex-1/1 w-full text-balance mobileLandscape:absolute mobileLandscape:bottom-0 mobileLandscape:bg-black/50 mobileLandscape:h-fit md:absolute md:bottom-0 md:bg-black/50 md:p-10 lg:bg-black/0 lg:relative lg:p-7 p-5 lg:flex-1/3  content-center text-lightgray"
@@ -29,11 +29,10 @@
     <!-- gallery -->
 
     <div class="flex flex-wrap pb-10 justify-center">
-      <div class="flex flex-col m-2   min-h-fit lg:w-120 md:w-5/12 w-120  "
+      <div class="flex flex-col m-2 min-h-fit lg:w-120 md:w-5/12 w-120  "
         v-for="art in arts" :key="art.src">
        
-
-          <div @click="(e) => toggleZoom(`images/${art.artist}/${art.src}`, art.name, art.description)" class="w-full h-full hover:cursor-pointer p-2 shadow-offblack/20 shadow-xl transition-all hover:shadow-offblack/30 hover:p-1  bg-blueb">
+          <div @click="(e) => toggleZoom(`images/${art.artist}/${art.src}`, art.name, art.description)" class="w-full h-full hover:cursor-pointer hover:scale-102 p-2 shadow-offblack/20 shadow-xl transition-all hover:shadow-offblack/30 hover:p-1  bg-blueb">
             <div>
               <NuxtImg class=" shadow-md shadow-offblack/20 object-contain h-full w-full" :src="`/images/${art.artist}/${art.src}`"
                 :alt="art.name + art.description" />
@@ -43,7 +42,6 @@
               <p class="artdescription text-offwhite italic hover:cursor-pointer">{{ art.description }}</p>
             </div>
           </div>
-
 
       </div>
     </div>

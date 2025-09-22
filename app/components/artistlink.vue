@@ -1,5 +1,5 @@
 <template>
-    <div class="m-2 overflow-clip rounded-md max-h-64 md:max-h-screen">
+    <div class="m-2 overflow-clip rounded-md max-h-64 md:max-h-screen shadow-offblack/50 shadow-md">
         <NuxtLink :to="for">
    
             <div class="relative lg:max-w-full ">

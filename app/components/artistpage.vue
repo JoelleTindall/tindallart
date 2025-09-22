@@ -6,7 +6,7 @@
   
         <div class="flex items-center justify-center text-balance bg-strawb">
           <div class=" py-10 w-full h-full ">
-            <h1 class="text-center text-6xl lg:text-8xl p-5 uppercase">THE ART OF {{ for }} TINDALL</h1>
+            <h1 class="text-center text-6xl lg:text-8xl p-5 uppercase">WORKS BY {{ for }} TINDALL</h1>
           </div>
         </div>
   

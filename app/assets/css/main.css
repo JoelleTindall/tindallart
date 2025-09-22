@@ -21,6 +21,9 @@
     --artist-grid-rows: 1fr 0fr ;
   }
 
+  body {
+    background-color: #D7C6CF;
+  }
   @font-face {
     font-family: "Marker Felt";
     src: url("/fonts/Marker Felt.ttf") format("truetype");

@@ -9,7 +9,7 @@ definePageMeta({
     layout: 'nav'
 })
 useSeoMeta({
-    title: 'Karen Tindall',
+    title: 'Tindallart - Karen Tindall',
     ogTitle: 'Tindallart - Karen Tindall', // Open Graph title
     description: 'The art of Karen Tindall',
 });

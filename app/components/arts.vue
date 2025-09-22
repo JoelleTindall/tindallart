@@ -2,7 +2,7 @@
   <div class=" bg-choco">
     <!-- zoomed in -->
 <h2 class="text-5xl text-center uppercase py-10 text-offwhite lg:text-8xl ">The Art</h2>
-    <div @click="(e) => toggleHideText()" class=" top-0 left-0 right-0 h-dvh max-h-dvh min-h-fit max-w-dvw z-1000 bg-black/75 backdrop-blur-sm "
+    <div @click="(e) => toggleHideText()" class="  top-0 left-0 right-0 h-dvh max-h-dvh min-h-fit max-w-dvw z-1000 bg-black/75 backdrop-blur-sm "
       :class="[zoom ? 'fixed' : 'hidden']">
       <div
         class="absolute right-3 top-3 z-1001 bg-black/50 rounded-4xl fill-white hover:cursor-pointer hover:opacity-90 active:opacity-90 opacity-50"
@@ -110,11 +110,16 @@ const toggleZoom = (src: string = "src", name: string = "name", description: str
   if (zoom.value) {
     selected.value = [src, name, description];
   }
-
+  document.body.style.overflow = zoom.value ? "hidden" : "initial";
 };
 
 const toggleHideText = () => {
   hideText.value = !hideText.value;
 };
+
+onBeforeUnmount(() => {
+
+  document.body.style.overflow = "initial";
+});
 
 </script>

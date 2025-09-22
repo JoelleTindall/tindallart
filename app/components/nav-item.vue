@@ -4,7 +4,7 @@
         class="group flex-1/4 shrink hover:text-shadow-gray-100/40 hover:text-shadow-md active:text-shadow-gray-100/40 active:text-shadow-md transition-all"
         :class="[isActive ? ('text-shadow-gray-100/40 text-shadow-md') : ('text-shadow-2xs text-shadow-transparent')]">
         <div 
-            class=" group-active:bg-blue-400 group-hover:bg-blue-600/50 h-24 content-center"
+            class="  group-hover:bg-blueb transition h-24 content-center"
             :class="[isActive ? ('bg-choco') : ('bg-none'), isActive && 'mobileLandscape:bg-lightgreen']">
             <div class="w-full px-4 group-hover:py-6 group-active:py-6 transition-padding duration-400 group-hover:bg-blueb group-active:bg-choco flex content-center justify-center">
                 <p 

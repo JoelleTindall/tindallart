@@ -9,7 +9,7 @@ definePageMeta({
     layout: 'nav'
 })
 useSeoMeta({
-    title: 'Dana Tindall',
+    title: 'Tindallart - Dana Tindall',
     ogTitle: 'Tindallart - Dana Tindall', // Open Graph title
     description: 'The art of Dana Tindall',
 });

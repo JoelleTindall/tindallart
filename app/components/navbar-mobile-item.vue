@@ -11,7 +11,7 @@
                 <div class=" group-hover:w-full transition-all h-full "
                     :class="[isActive && !hovering ? ('w-full ') : ('bg-none w-0')]" />
             </div>
-            <div class=" font-[Open_Sans] uppercase link w-full flex-2/2 h-8/10 content-center text-shadow-offwhite/60 group-hover:text-shadow-xs transition-all"
+            <div class="  uppercase link w-full flex-2/2 h-8/10 content-center text-shadow-offwhite/60 group-hover:text-shadow-xs transition-all"
                 :class="[isActive && !hovering ? ('text-shadow-xs') : ('text-shadow-lg')]">
                 {{ name }}
             </div>

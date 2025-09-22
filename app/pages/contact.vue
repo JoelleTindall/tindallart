@@ -11,7 +11,7 @@ definePageMeta({
     layout: 'nav'
 })
 useSeoMeta({
-    title: 'Contact Us',
+    title: 'Tindallart - Contact Us',
     ogTitle: 'Tindallart - Contact Us', // Open Graph title
     description: 'Contact Form for Tindallart',
 });

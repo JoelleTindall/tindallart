@@ -1,6 +1,6 @@
 <template>
     <div class="m-2 overflow-clip rounded-md max-h-64 md:max-h-screen">
-        <NuxtLink class=" " :to="for">
+        <NuxtLink :to="for">
    
             <div class="relative lg:max-w-full ">
 

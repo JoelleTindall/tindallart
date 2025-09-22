@@ -1,5 +1,5 @@
 <template>
-    <div class=" lg:m-auto min-h-fit bg-none text-offwhite lg:pt-10">
+    <div class=" lg:m-auto min-h-fit bg-choco text-offwhite lg:pt-10">
         <!-- <banner src="/images/dana/Orange_Popsicle_2024_Mixed_media_18x7x4.jpeg" height="50px"></banner> -->
         <div class="w-full min-h-full p-4 text-center lg:max-w-4/5 lg:m-auto">
             <div class="mx-4 text-xl min-h-fit p-2 lg:flex lg:flex-row content-center items-center ">

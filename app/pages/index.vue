@@ -13,8 +13,11 @@
 </template>
 
 <script setup>
+definePageMeta({
+    layout: 'nav'
+})
 useSeoMeta({
-    title: 'TindallArt: fine art by two fine artists',
+    title: 'TindallArt: Fine Art by Two Fine Artists',
     ogTitle: 'Tindallart', // Open Graph title
     description: 'Cincinnati based artists Karen Tindall and Dana Tindall',
 });

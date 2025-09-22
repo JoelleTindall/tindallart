@@ -3,9 +3,9 @@
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
+  compatibilityDate: '2025-09-22',
   devtools: { enabled: false },
-  modules: ['@nuxt/image', "nuxt-swiper"],
+  modules: ['@nuxt/image'],
   css: ['~/assets/css/main.css'],
     vite: {
     plugins: [
@@ -16,7 +16,7 @@ export default defineNuxtConfig({
     app: {
     head: {
       title:
-        "TindallArt: fine art by two fine artists",
+        "TindallArt: Fine Art by Two Fine Artists",
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1, maximum-scale=1",
       htmlAttrs: {

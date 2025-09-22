@@ -9,7 +9,7 @@
 
                         <li v-for="aff in affiliations" :key="aff.name" class="">
                             <div v-if="aff.name === `Button Gallery`" class="rounded hover:bg-offwhite p-1">
-                                <a class="hover:cursor-pointer" href="https://www.buttonartgallery.com/">
+                                <a class="hover:cursor-pointer" href="https://www.buttonartgallery.com/" target="_blank">
                                     <div class="hover:cursor-pointer ">
                                         <p class="hover:cursor-pointer text-lg font-semibold text-offblack">{{ aff.name
                                         }}</p>

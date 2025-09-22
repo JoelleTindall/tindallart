@@ -11,7 +11,7 @@
       <div class="flex-1/3 lg:flex-1/4 content-center py-2 lg:py-0">
         <div class="flex flex-row content-center items-center justify-center">
           <div class="px-1">
-            <a href="https://www.instagram.com/dana.a.tindall/" class="fill-offblack hover:fill-blueb">
+            <a href="https://www.instagram.com/dana.a.tindall/" target="_blank" class="fill-offblack hover:fill-blueb">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" 
                 class="bi bi-instagram " viewBox="0 0 16 16">
                 <path
@@ -20,7 +20,7 @@
             </a>
           </div>
           <div class="px-1">
-            <a href="https://www.facebook.com/profile.php?id=61560543375332" class="fill-offblack hover:fill-blueb">
+            <a href="https://www.facebook.com/profile.php?id=61560543375332" target="_blank" class="fill-offblack hover:fill-blueb">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-facebook"
                 viewBox="0 0 16 16">
                 <path

@@ -1,7 +1,6 @@
-<!-- eslint-disable vue/first-attribute-linebreak -->
 <template>
   <div class="p-4 ">
-    <h2 class=" pt-2 text-5xl lg:text-7xl text-center uppercase pb-4 text-offblack">Contact Us</h2>
+    <h2 class=" pt-2 lg:py-6 text-5xl lg:text-7xl text-center uppercase pb-4 text-offblack">Contact Us</h2>
 
     <div class="min-w-fit lg:max-w-3/5 m-auto p-4 bg-blueb rounded-xl shadow-md shadow-offblack/25">
       <form name="contact" method="POST" data-netlify="true" netlify>
@@ -37,10 +36,10 @@
             class="p-3 mt-2 h-36 w-full resize-none rounded-lg bg-offwhite/95 shadow-sm text-lg border-2 border-black placeholder:text-gray-400 text-black"
             placeholder="What's on your mind?" required></textarea>
         </div>
-
+        
         <div class="content-center text-center w-full py-8">
           <input type="submit" value="Send Message"
-            class="w-full text-2xl border-2 rounded bg-strawb p-4 text-offblack border-offblack shadow-offblack/60 shadow-sm hover:shadow-md hover:bg-choco hover:text-white hover:border-black transition-all">
+            class="w-full text-2xl border-2 rounded bg-offwhite/95 p-4 text-offblack border-offblack shadow-offblack/60 shadow-sm hover:shadow-md active:shadow-md hover:bg-choco active:bg-choco hover:text-white active:text-white hover:border-black active:border-black transition-all">
         </div>
       </form>
     </div>

@@ -5,8 +5,8 @@
         <div>
             
           <div class="p-2 lg:p-4 flex md:flex-row md:flex-nowrap flex-wrap w-full justify-center">
-               <Artistlink for="dana"/>
-               <Artistlink for="karen"/>
+               <Artistlink artist="dana"/>
+               <Artistlink artist="karen"/>
           </div>
         </div>
     </main>

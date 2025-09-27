@@ -12,7 +12,8 @@
     --color-offblack: #030c0a;
     --color-offwhite:#FFFFFA;
     --color-choco: #967259;
-    --color-strawb:#D7C6CF;
+    --color-strawb: #d9c7d0;
+    /* #D7C6CF */
     --color-blueb:#597d96;
     --color-mint: #AAFAC8;
     --color-robinegg: #C7FFED;
@@ -22,7 +23,7 @@
   }
 
   body {
-    background-color: #D7C6CF;
+    background-color: #d9c7d0;
   }
   @font-face {
     font-family: "Marker Felt";

@@ -1,6 +1,6 @@
 <template>
     <div class="h-full w-full">
-<artistpage for="dana"></artistpage>
+<artistpage artist="dana"></artistpage>
     </div>
 </template>
 
@@ -11,6 +11,6 @@ definePageMeta({
 useSeoMeta({
     title: 'Tindallart - Dana Tindall',
     ogTitle: 'Tindallart - Dana Tindall', // Open Graph title
-    description: 'The art of Dana Tindall',
+    description: 'The Works of Dana Tindall',
 });
 </script>

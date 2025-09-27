@@ -1,18 +1,18 @@
 <template>
   <div ref="navbar"
-    class=" fixed bg-none overflow-x-hidden top-0 z-50 bg-strawb  h-fit min-h-[70px] w-full transition-all duration-200"
+    class=" fixed bg-none overflow-x-hidden top-0 z-50 bg-strawb shadow-strawb/50 shadow-xs h-fit min-h-[70px] w-full transition-all duration-200"
     :style="[showMenu ? 'min-height:100dvh;' : 'min-height:72px;', navHidden ? 'transform: translateY(-70px); opacity:0;' : 'transform: translateY(0); opacity:1;']">
       <div id="nav">
       <nav class="container min-w-full min-h-full mobileLandscape:flex mobileLandscape:justify-between mobileLandscape:items-center md:flex md:justify-between md:items-center">
         <div class="flex items-center justify-between h-full min-h-[70px]">
           <NuxtLink to="/" class=" group my-2 pl-6 h-full group-hover:cursor-pointer">
-            <div @click="showMenu && toggleNav()" class="min-h-full bg-black/10 rounded-lg group-hover:cursor-pointer h-full ">
+            <div @click="showMenu && toggleNav()" class="min-h-full bg-offwhite/25 shadow-xs shadow-offblack/25 rounded-lg group-hover:cursor-pointer h-full ">
             
                 <h2 class="h-full text-3xl p-2 group-hover:cursor-pointer">Tindallart</h2>
             </div>
           </NuxtLink>
 
-          <div class=" bg-black/10 rounded-lg absolute right-0 mr-6 hover:cursor-pointer" @click="toggleNav">
+          <div class=" bg-offwhite/25 shadow-xs shadow-offblack/25 rounded-lg absolute right-0 mr-6 hover:cursor-pointer" @click="toggleNav">
             <div class="flex mobileLandscape:hidden md:hidden rounded-3xl p-2">
               <button class="group rounded-lg ">
                 <div class="grid justify-items-center gap-1.5">

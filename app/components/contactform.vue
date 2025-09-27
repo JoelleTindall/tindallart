@@ -9,14 +9,14 @@
         <div class="flex flex-wrap pb-1.5">
           <label for="name" class="flex-2/2 text-2xl text-offwhite">Name</label>
           <input id="name" type="text" name="name" autocomplete="true"
-            class="placeholder:text-gray-400  text-offblack border-offblack/75 border-2 rounded bg-offwhite/90 flex-2/2 min-h-fit text-lg"
+            class="placeholder:text-gray-400  text-offblack border-offblack/75 border-2 rounded bg-offwhite/95 flex-2/2 min-h-fit text-lg"
             placeholder="Required" required />
         </div>
 
         <div class="flex flex-wrap pb-1.5">
           <label for="email" class="flex-2/2 text-2xl text-offwhite">Email</label>
           <input id="email" type="email" name="email" autocomplete="true"
-            class="placeholder:text-gray-400 text-black border-offblack/75 border-2 rounded bg-offwhite/90 flex-2/2 min-h-fit text-lg"
+            class="placeholder:text-gray-400 text-black border-offblack/75 border-2 rounded bg-offwhite/95 flex-2/2 min-h-fit text-lg"
             placeholder="Required" required />
         </div>
 
@@ -24,7 +24,7 @@
           <label for="phone" class="flex-2/2 text-2xl text-offwhite">Phone
             Number</label>
           <input id="phone" name="phone" type="tel" autocomplete="true"
-            class="placeholder:text-gray-400 text-black border-offblack/75 border-2 rounded bg-offwhite/90 flex-2/2 min-h-fit text-lg"
+            class="placeholder:text-gray-400 text-black border-offblack/75 border-2 rounded bg-offwhite/95 flex-2/2 min-h-fit text-lg"
             placeholder="Optional" />
         </div>
 

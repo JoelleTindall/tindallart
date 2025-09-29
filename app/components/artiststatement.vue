@@ -13,11 +13,11 @@
         </div>
 
 
-        <artistquote v-if="name == 'Dana'" class="lg:m-auto" :quote="quote"></artistquote>
-        <div v-else class="bg-strawb h-6 lg:h-10 content-center">
+        <artistquote  class="lg:m-auto" :quote="quote"></artistquote>
+        <!-- <div v-else class="bg-strawb h-6 lg:h-10 content-center">
             <hr class="bg-offwhite/25 text-offwhite/25 border-0  m-auto h-1/2 block">
             </hr>
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -42,8 +42,8 @@ switch (props.artist) {
         break;
     case "karen":
         name = "Karen"
-        bio = "I hold degrees in fine art, graphic art, and occupational therapy and feel elements of each of those fields are reflected in my work. Most of my work represents my search for the quiddities of an object, a place or technique. Smaller formats are preferred as they force the viewer to look more closely and to pay attention to the result of those searches."
-        quote = ""
+        bio = "I hold degrees in fine art, graphic art, and occupational therapy and feel elements of each of those fields are reflected in my work."
+        quote = "Most of my work represents my search for the quiddities of an object, a place or technique. Smaller formats are preferred as they force the viewer to look more closely and to pay attention to the result of those searches."
         break;
 }
 

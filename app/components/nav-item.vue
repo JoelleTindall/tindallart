@@ -2,7 +2,7 @@
     <NuxtLink 
         :to="to" 
         class="group flex-1/4 shrink hover:text-shadow-gray-100/40 hover:text-shadow-md active:text-shadow-gray-100/40 active:text-shadow-md transition-all"
-        :class="[isActive ? ('text-shadow-gray-100/40 text-shadow-xs') : ('text-shadow-2xs text-shadow-transparent')]">
+        :class="[isActive ? ('text-shadow-gray-100/40 text-shadow-xs z-52') : ('text-shadow-2xs text-shadow-transparent z-51')]">
         <div 
             class="  group-hover:bg-blueb  group-active:bg-blueb transition h-24 content-center "
             :class="[isActive ? ('bg-blueb shadow-sm shadow-offblack/25 ') : ('bg-none')]">

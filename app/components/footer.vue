@@ -1,7 +1,7 @@
 <template>
   <footer class="flex flex-col text-center mt-auto max-w-screen bottom-0 p-2 md:p-8">
     <hr
-      class="md:my-10 mt-6 mb-4 h-px border-t-2 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400">
+      class="md:my-10 mt-6 mb-4 h-px border-t-2 bg-transparent bg-gradient-to-r from-transparent via-choco to-transparent opacity-25 dark:via-choco">
 
     <div class="flex flex-col md:flex-row min-w-full md:px-5">
       <div class="flex-1/3 md:flex-1/4 text-nowrap grow md:text-left text-xs md:text-base lg:text-lg content-center">
@@ -42,6 +42,8 @@
 
         </div>
       </div>
+
     </div>
+    <a class="lg:text-right text-xs mt-5 font-normal font-[Open_Sans] hover:underline" target="_blank" href="https://www.joelletindall.com">Site by Joelle Tindall</a>
   </footer>
 </template>

@@ -37,9 +37,9 @@
             placeholder="What's on your mind?" required></textarea>
         </div>
         
-        <div class="content-center text-center w-full py-8">
+        <div class="content-center lg:w-3/4 lg:m-auto text-center w-full py-8">
           <input type="submit" value="Send Message"
-            class="w-full text-2xl border-2 rounded bg-offwhite/95 p-4 text-offblack border-offblack shadow-offblack/60 shadow-sm hover:shadow-md active:shadow-md hover:bg-choco active:bg-choco hover:text-white active:text-white hover:border-black active:border-black transition-all">
+            class="w-full text-2xl border-2 rounded bg-offwhite/80 p-4 text-offblack border-offblack shadow-offblack/60 shadow-sm hover:shadow-md active:shadow-md hover:bg-choco active:bg-choco hover:text-white active:text-white hover:border-black active:border-black transition-all">
         </div>
       </form>
     </div>

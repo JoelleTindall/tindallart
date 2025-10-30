@@ -90,6 +90,9 @@ switch (props.artist) {
     break;
   case "karen":
     arts = [
+      { src: 'Red 4x4 gouache on paper.JPG', name: 'Red', description: '4” x 4” Gouache on paper', artist:props.artist},
+      { src: 'Green 4x4 gouache on paper.JPG', name: 'Green', description: '4” x 4” Gouache on paper', artist:props.artist},
+      { src: 'Blue 4x4 gouache on paper.JPG', name: 'Blue', description: '4” x 4” Gouache on paper', artist:props.artist},
       { src: 'Arches-2025-4_X4.5_-acrylic and prismacolor on paper.jpg', name: 'Arches', description: '4” x 4.5” Acrylic and prismacolor on paper', artist: props.artist },
       { src: 'Canyonlands-2025-4.5_X5.5_ acrylic and prismacolor on paper.jpg', name: 'Canyonlands', description: '4.5” x 5.5” Acrylic and prismacolor on paper', artist: props.artist },
       { src: 'Cloudscape with barn-2025-5_X5_ gouache on paper.jpg', name: 'Cloudscape with Barn', description: '5” x 5” Gouache on paper', artist: props.artist },

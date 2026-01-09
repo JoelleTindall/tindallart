@@ -3,11 +3,11 @@
         
         
         <div class="w-full min-h-full   md:p-4 lg:pb-10 text-center xl:max-w-3/4 m-auto">
-            <div class="  py-5 md:p-2 md:rounded-2xl bg-offblack/5 md:shadow-xs shadow-offblack/25  ">
+            <div class="  py-5 md:p-2 md:rounded-2xl bg-offblack/10 md:shadow-xs shadow-offblack/25  ">
                 <div class="mx-4 text-xl min-h-fit  md:p-2 lg:py-5 lg:flex lg:flex-row content-center items-center justify-center ">
                     <h2 class="text-5xl  lg:text-7xl text-center uppercase pb-4 lg:pb-0 lg:w-2/5">The Artist</h2>
 
-                    <div class="lg:w-3/5"><p class="text-offwhite md:pl-2 lg:text-xl xl:text-2xl">{{ bio }}</p></div>
+                    <div class="lg:w-3/5"><p class="text-offwhite/95 md:pl-2 lg:text-xl xl:text-2xl">{{ bio }}</p></div>
                 </div>
             </div>
         </div>

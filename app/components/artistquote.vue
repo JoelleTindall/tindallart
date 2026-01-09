@@ -2,7 +2,7 @@
     <div class="w-full min-h-fit  text-center bg-cover bg-center bg-fixed" >
         <div class="h-full w-full  min-h-fit py-5 bg-strawb">
 
-            <div class="p-4  md:rounded-2xl bg-offwhite/25 md:bg-offwhite/0 ">
+            <div class="p-4  md:rounded-2xl bg-offwhite/50 md:bg-offwhite/0 ">
 
                 <div class="xl:max-w-3/4 lg:m-auto md:bg-offwhite/25 md:p-10 md:rounded-2xl md:shadow-sm shadow-offblack/25">
                     <svg class="w-10 h-10 text-blueb/75  mb-4 transform -scale-x-100" aria-hidden="true"

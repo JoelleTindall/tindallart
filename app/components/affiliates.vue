@@ -1,5 +1,5 @@
 <template>
-    <div class=" md:m-auto min-h-fit pt-10 text-offwhite bg-strawb lg:px-5">
+    <div class=" md:m-auto min-h-fit pt-10 text-offwhite bg-gradient-to-b from-strawb to-offwhite  lg:px-5">
         <div
             class="m-2 mt-0 py-4 lg:max-w-full md:max-w-150 md:m-auto bg-blueb lg:bg-offwhite/25 rounded-xl shadow-sm shadow-offblack/25 lg:flex lg:flex-row lg:items-center lg:p-5 xl:p-10  ">
             <div class="lg:flex-1/2">

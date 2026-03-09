@@ -8,7 +8,7 @@
           <NuxtLink to="/" class=" group my-2 pl-6 h-full group-hover:cursor-pointer">
             <div @click="showMenu && toggleNav()" class="min-h-full bg-offwhite/25 shadow-xs shadow-offblack/25 rounded-lg group-hover:cursor-pointer h-full ">
             
-                <h2 class="h-full text-3xl p-2 group-hover:cursor-pointer">Tindallart</h2>
+                <h2 class="logo h-full text-3xl p-2 group-hover:cursor-pointer">Tindallart</h2>
             </div>
           </NuxtLink>
 
@@ -47,7 +47,7 @@
 
         <!-- Desktop Nav -->
         <ul 
-          class="hidden mobileLandscape:flex mobileLandscape:w-100 md:flex flex-row text-2xl md:text-3xl h-full py-0  rounded-bl"
+          class="hidden mobileLandscape:flex mobileLandscape:w-100 md:flex flex-row text-2xl md:text-3xl h-full py-0 rounded-bl"
           @mouseover="hovering = true"
           @mouseleave="hovering = false">
           

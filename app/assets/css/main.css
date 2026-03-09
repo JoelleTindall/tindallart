@@ -37,18 +37,13 @@
 
   * {
     box-sizing: border-box;
-    font-family: "Marker Felt", sans-serif;
+    
+    font-family: "Open Sans", sans-serif;
     letter-spacing: 0.25px;
   }
 
-  p {
-    font-family: "Open Sans", sans-serif;
-  }
-
-
-
-  input,label,textarea{
-        font-family: "Open Sans", sans-serif;
+  .logo, h1 {
+    font-family: "Marker Felt", sans-serif;
   }
 
   .artdescription {
@@ -62,6 +57,7 @@
   h4:hover {
     cursor: default;
   }
+
 
   p {
     color: var(--color-offblack);

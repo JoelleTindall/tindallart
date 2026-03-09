@@ -4,11 +4,11 @@
         class="group flex-1/4 shrink hover:text-shadow-gray-100/40 hover:text-shadow-md active:text-shadow-gray-100/40 active:text-shadow-md transition-all"
         :class="[isActive ? ('text-shadow-gray-100/40 text-shadow-xs z-52') : ('text-shadow-2xs text-shadow-transparent z-51')]">
         <div 
-            class="  group-hover:bg-blueb  group-active:bg-blueb transition h-24 content-center "
+            class="group-hover:bg-blueb  group-active:bg-blueb transition h-24 content-center"
             :class="[isActive ? ('bg-blueb shadow-sm shadow-offblack/25 ') : ('bg-none')]">
             <div class="w-full px-4 group-hover:py-6 group-active:py-6 transition-padding duration-400 group-hover:bg-blueb group-active:bg-blueb flex content-center justify-center">
                 <p 
-                    class="link font-normal mobileLandscape:text-xl  group-hover:text-offwhite group-active:text-offwhite group-hover:scale-105 group-hover:cursor-pointer group-active:scale-105 transition-all"
+                    class="link font-semibold mobileLandscape:text-xl group-hover:text-offwhite group-active:text-offwhite group-hover:scale-105 group-hover:cursor-pointer group-active:scale-105 transition-all"
                     :class="[isActive ? ('text-offwhite scale-105') : ('text-offblack/95'), isActive && 'mobileLandscape:text-offwhite scale-105']">{{ name }}
                 </p>
             </div>

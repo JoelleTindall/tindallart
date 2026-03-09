@@ -72,6 +72,10 @@ switch (props.artist) {
   case "dana":
 
     arts = [
+      { src: 'Big Lunch 2026, 11.5” x 23.5” x 5” Mixed Media.jpg', name: 'Big Lunch', description: '11.5” x 23.5” x 5” Mixed media', artist: props.artist },
+      { src: 'Big S’more 2026, 8” x 7.5” x 4” Mixed Media.jpeg', name: 'Big S’more', description: '8” x 7.5” x 4” Mixed media', artist: props.artist },
+      { src: 'Framed Tripleburger 2026, 15” x 13” x 4.5” Mixed Media.jpg', name: 'Framed Tripleburger', description: '15” x 13” x 4.5” Mixed media', artist: props.artist },
+      { src: 'Sliders 2026, 5” x 5” x 4” (each) Mixed Media.jpg', name: 'Sliders', description: '5” x 5” x 4” (each) Mixed media', artist: props.artist },
       { src: '3 Corndogs!, 2025,  10” x 6.5” x 3.5” Mixed media.jpeg', name: '3 Corndogs!', description: '10” x 6.5” x 3.5” Mixed media', artist: props.artist },
       { src: 'Big Fat Burger, 8.25” x 7” x 7” Mixed media.jpg', name: 'Big Fat Burger', description: '8.25” x 7” x 7” Mixed media', artist: props.artist },
       { src: 'Bomb Pop, 2025, 18” x 5.5” x 5.5” Mixed media.jpg', name: 'Bomb Pop', description: '18” x 5.5” x 5.5” Mixed media', artist: props.artist },

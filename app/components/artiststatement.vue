@@ -13,11 +13,8 @@
         </div>
 
 
-        <artistquote  class="lg:m-auto" :quote="quote"></artistquote>
-        <!-- <div v-else class="bg-strawb h-6 lg:h-10 content-center">
-            <hr class="bg-offwhite/25 text-offwhite/25 border-0  m-auto h-1/2 block">
-            </hr>
-        </div> -->
+        <artistquote  class="lg:m-auto whitespace-pre-line" :quote="quote"></artistquote>
+
     </div>
 </template>
 
@@ -38,7 +35,7 @@ switch (props.artist) {
     case "dana":
         name = "Dana"
         bio = "Dana Tindall lives and has a studio in northern Kentucky. He has been professionally creating fine artwork since 1980 and has exhibited work in multiple solo and juried group shows locally, nationally, and internationally. He has received professional development grants from the Kentucky Arts Council, and was awarded an Al Smith Fellowship. He graduated from Austin College (BA, Art), MA in Art from the University of Dallas, and holds an Ed.D from the University of Cincinnati."
-        quote = "This art is all about American consumerism, overabundance, and liking things. I make these pieces because they are images of what people know and like. They are absurd images; on the surface they don’t offend and are friendly. I make them oversized and out of proportion to draw attention to them, invite comments/conversation and perhaps a laugh. Humor as a part of these pieces is important."
+        quote = "My artwork has always been a means of social commentary focusing on American social structures, norms and desires. Consequently this art is all about American relationships to manufactured products and manufactured food, consumerism, overabundance, and people liking things.\n\nI intentionally do not create images of people, but instead make images and oversized replicas of things people are surrounded by, know and like. They are intended to be absurd; on the surface they don’t offend and are generally designed to be friendly. Humor as a part of these pieces is important. I make them oversized and often out of proportion to draw attention to them, invite comments/conversation and perhaps some deeper insight into our shared reality."
         break;
     case "karen":
         name = "Karen"
